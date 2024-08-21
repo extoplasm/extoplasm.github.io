@@ -1,3 +1,3 @@
 (objectively) cool website made with react
 
-extoplasm.github.io/extoplasm.website
+[extoplasm.github.io](https://extoplasm.github.io)
