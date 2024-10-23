@@ -1,4 +1,5 @@
-import { Canvas, useFrame, ThreeElements } from '@react-three/fiber';
+import * as THREE from 'three';
+import { useFrame, ThreeElements } from '@react-three/fiber';
 import { useRef, useState } from 'react';
 
 export default function Box(props: ThreeElements['mesh']) {
@@ -7,7 +8,7 @@ export default function Box(props: ThreeElements['mesh']) {
 	const [hovered, setHover] = useState(false);
 	
 	// rotate
-	useFrame((state, delta) => {
+	useFrame((_state, delta) => {
 		meshRef.current.rotation.x += delta/2
 		meshRef.current.rotation.y -= delta/2
 	});
@@ -16,8 +17,8 @@ export default function Box(props: ThreeElements['mesh']) {
 		<mesh
 			{...props}
 			ref = {meshRef}
-			onPointerOver = {(e) => setHover(true)}
-			onPointerOut = {(e) => setHover(false)}
+			onPointerOver = {(_e) => setHover(true)}
+			onPointerOut = {(_e) => setHover(false)}
 		>
 			<boxGeometry args={[1, 1, 1]} />
 			<meshStandardMaterial color={hovered ? 'grey' : 'white'}/>
