@@ -37,4 +37,17 @@ h1 + h2 {
 
 .link {
 	color: white;
+	text-decoration: underline;
+	background-color: transparent;
+	font-family: inherit;
+	border: none;
+	padding: 0;
+	padding-block: 0;
+	padding-inline: 0;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+.canvas {
+	z-index: -1;
 }
