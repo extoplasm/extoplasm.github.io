@@ -14,6 +14,7 @@ export default function Ghost(props: ThreeElements['mesh']) {
 	const meshRef = useRef<THREE.Mesh>(null!)
 
 	const [hovered, setHover] = useState(false);
+	const [scale, setScale] = useState(false);
     
     // offset rotation
     useEffect(() => {
@@ -29,6 +30,8 @@ export default function Ghost(props: ThreeElements['mesh']) {
 		<mesh
 			{...props}
 			ref = {meshRef}
+			onClick = {(_e) => setScale(!scale)}
+			scale = {scale ? 1.25 : 1}
 			onPointerOver = {(_e) => setHover(true)}
 			onPointerOut = {(_e) => setHover(false)}
 		>
