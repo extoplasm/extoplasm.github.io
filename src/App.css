@@ -9,6 +9,14 @@
 	color: white;
 }
 
+.canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	pointer-events: all;
+}
+
 h1 + h2 {
 	padding: 0;
 	margin: 0;
@@ -23,23 +31,6 @@ h1 + h2 {
 	margin: 10px;
 }
 
-.text-container {
-	position: fixed;
-	width: 100%;
-}
-
-.text-container.left {
-	text-align: left;
-}
-
-.text-container.right {
-	text-align: right;
-}
-
-.text-container.middle {
-	text-align: center;
-}
-
 .link {
 	color: white;
 	text-decoration: underline;
@@ -51,9 +42,4 @@ h1 + h2 {
 	padding-inline: 0;
 	font-size: inherit;
 	cursor: pointer;
-}
-
-.canvas {
-	z-index: 0;
-	pointer-events: all;
 }
