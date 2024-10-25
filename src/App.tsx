@@ -45,7 +45,7 @@ export default function App() {
 			<Canvas className="canvas">
 				<ambientLight intensity={0.1} />
 				<spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={1} />
-				<Ghost position={[0, -1, 0]} />
+				<Ghost position={[0, 0, 0]} />
 			</Canvas>
 		</>
 	)
