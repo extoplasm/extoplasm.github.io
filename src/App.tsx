@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Ghost from './assets/Ghost.tsx';
+import './App.css'
 
 function copyToClipboard(text: string) {
 	navigator.clipboard.writeText(text)
