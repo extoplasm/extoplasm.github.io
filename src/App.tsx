@@ -23,7 +23,7 @@ const Links = () => {
 					setHoveredLink(false)
 				}}
 			>
-				<h3>{hoveredLink ? 'links 👇' : 'links'}</h3>
+				<h3>{hoveredLink ? 'links ↓' : 'links'}</h3>
 				<a className="link" href="https://www.youtube.com/@extoplasm" target="_blank" rel="noopener noreferrer">youtube</a>
 				<br/>
 				<a className="link" href="http://github.com/extoplasm" target="_blank" rel="noopener noreferrer">github</a>
