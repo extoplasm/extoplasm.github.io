@@ -35,6 +35,8 @@ const Links = () => {
 						setCopiedDiscord(false)
 					}, 1000)
 				}}>{copiedDiscord ? 'copied to clipboard!': 'discord' }</button>
+				<h4>project links</h4>
+				<a href="https://extoplasm.github.io/gta-internet"  target="_blank" rel="noopener noreferrer" className="link">gta internet remake</a>
 			</div>
 		</>
 	)
