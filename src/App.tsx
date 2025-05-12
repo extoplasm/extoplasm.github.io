@@ -36,7 +36,19 @@ const Links = () => {
 					}, 1000)
 				}}>{copiedDiscord ? 'copied to clipboard!': 'discord' }</button>
 				<h4>project links</h4>
-				<a href="https://extoplasm.github.io/gta-internet"  target="_blank" rel="noopener noreferrer" className="link">gta internet remake</a>
+				<details>
+					<summary>
+						<a href="https://extoplasm.github.io/gta-internet"  target="_blank" rel="noopener noreferrer" className="link">gta internet remake</a>
+					</summary>
+					<p className="small">wip -<br/> a remake of the web present in gta 5, and no it will not be finished before gta 6</p>
+				</details>
+				<br/>
+				<details>
+					<summary>
+						<a href="http://extoplasm.github.io/pomodoro"  target="_blank" rel="noopener noreferrer" className="link">pomodoro timer</a>
+					</summary>
+					<p className="small">wip -<br/> a small pomodoro timer, and no it will also not be finished before gta 6</p>
+				</details>
 			</div>
 		</>
 	)
