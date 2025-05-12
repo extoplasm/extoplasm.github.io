@@ -40,7 +40,7 @@ const Links = () => {
 					<summary>
 						<a href="https://extoplasm.github.io/gta-internet"  target="_blank" rel="noopener noreferrer" className="link">gta internet remake</a>
 					</summary>
-					<p className="small">wip -<br/> a remake of the web present in gta 5, and no it will not be finished before gta 6</p>
+					<p className="small">wip -<br/> a remake of the internet present in gta 5, and no it will not be finished before gta 6</p>
 				</details>
 				<br/>
 				<details>
